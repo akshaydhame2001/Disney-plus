@@ -3,7 +3,7 @@ export async function GET(request: Request) {
   const term = searchParams.get("term");
 
   const res = await fetch(
-    `https://${process.env.AZURE_DOMAIN}.azurewebsites.net/api/getaisuggestion?term=${term}`,
+    `https://disney-clone-sg.azurewebsites.net/api/getaisuggestion?term=${term}`,
     {
       method: "GET",
       next: {
