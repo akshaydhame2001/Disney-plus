@@ -26,8 +26,6 @@ async function GenreDropdown() {
   const response = await fetch(url, options);
   const data = (await response.json()) as Genres;
 
-  console.log(data);
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="text-white flex justify-center items-center">
