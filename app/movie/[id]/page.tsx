@@ -1,5 +1,6 @@
 import { getMovieDetails } from "@/lib/getMovies";
 import { Movie } from "@/typings";
+import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
@@ -16,9 +17,11 @@ async function MovieDetailsPage({
         <div className="container">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/3">
-              <img
+              <Image
                 src={`https://image.tmdb.org/t/p/original${movie.poster_path}`}
                 alt={movie.title}
+                width={1920}
+                height={1080}
                 className="w-full max-w-[370px] mx-auto rounded-lg shadow-md"
               />
             </div>
