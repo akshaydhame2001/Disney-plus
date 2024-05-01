@@ -1,13 +1,13 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       flex: {
-        full : "0 0 100%"
+        full: "0 0 100%",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -78,6 +78,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar-hide")],
-} satisfies Config
+};
 
-export default config
+export default config;

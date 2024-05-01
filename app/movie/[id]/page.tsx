@@ -1,6 +1,7 @@
 import { getMovieDetails } from "@/lib/getMovies";
 import { Movie } from "@/typings";
 import React from "react";
+import { FaStar } from "react-icons/fa";
 
 async function MovieDetailsPage({
   params: { id },
@@ -35,9 +36,12 @@ async function MovieDetailsPage({
                 {` ${Math.floor(movie.runtime / 60)}h  ${movie.runtime % 60}m`}
               </p>
               <p className="mb-4">{movie.overview}</p>
-              <p className="text-gray-500">
-                Rating: {Math.round(movie.vote_average * 10) / 10}/10
-              </p>
+              <div className="flex items-center">
+                <FaStar className="text-yellow-500 mr-1" />
+                <p className="text-gray-500">
+                  Rating: {Math.round(movie.vote_average * 10) / 10}/10
+                </p>
+              </div>
             </div>
           </div>
         </div>
