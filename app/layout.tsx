@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 export const metadata: Metadata = {
   title: "Disney+ Clone",
   description: "For Educational Purposes Only",
+  manifest: "/manifest.webmanifest",
 };
 
 export default function RootLayout({
