@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { Themetoggler } from './ThemeToggler'
-import SearchInput from './SearchInput'
-import GenreDropdown from './GenreDropdown'
+import Link from "next/link";
+import Image from "next/image";
+import { Themetoggler } from "./ThemeToggler";
+import SearchInput from "./SearchInput";
+import GenreDropdown from "./GenreDropdown";
 
 function Header() {
   return (
@@ -23,7 +23,7 @@ function Header() {
         <Themetoggler />
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
